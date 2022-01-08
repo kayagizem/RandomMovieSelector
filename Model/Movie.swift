@@ -2,26 +2,29 @@
 //  Movie.swift
 //  RandomMovieSelector
 //
-//  Created by Özgün Irmak on 27.12.2021.
+//  Created by gizem.kaya on 2.01.2022.
 //
 
 import Foundation
 
-struct Movie: Decodable
+
+struct Movie
 {
-    let adult: Bool
-    let backdrop_path: String //path to image
-    let genre_ids: [Int: Int]
-    let Id: Int
-    let original_language: String
-    let original_title: String
-    let overview: String
-    let popularity: Double
-    let poster_path: String //path to image
-    let release_date: String
-    let title: String
-    let video: Bool
-    let vote_average: Double
-    let vote_count: Int
-    
+    var movieId: String
+    var Certificate: String
+    var Director: String
+    var Genre: String
+    var Gross: String
+    var IMDB_Rating: Double
+    var Meta_score: Int
+    var No_of_Votes: Int
+    var Overview: String
+    var Poster_Link: String
+    var Released_Year: Int
+    var Runtime: String
+    var Series_Title: String
+    var Star1: String
+    var Star2: String
+    var Star3: String
+    var Star4: String
 }
